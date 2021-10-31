@@ -1,0 +1,6 @@
+Attraction.create(name: '八景島シーパラダイス', city: '横浜市', address: '横浜市金沢区八景島')
+Attraction.create(name: '野島公園', city: '横浜市', address: '横浜市金沢区野島町24')
+Attraction.create(name: '海の公園', city: '横浜市', address: '横浜市金沢区海の公園10')
+Visited.create(user_id: 1, visited_date: '2010-07-01', attraction_id: 1)
+Visited.create(user_id: 1, visited_date: '2013-10-15', attraction_id: 2)
+Visited.create(user_id: 2, visited_date: '2012-01-25', attraction_id: 3)
