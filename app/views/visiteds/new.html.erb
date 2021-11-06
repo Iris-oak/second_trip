@@ -1,8 +1,13 @@
 <div class="container">
 <div class="row">
   <div class="col-lg-8 offset-lg-2">
+
     <h1>すでに行ったところ</h1>
-    <%= render 'form', { visited: @visited } %>
+    <%= @attraction_id %>:<%= @attraction_name %>を登録します
+
+    <%= button_to '確認' , {action:'create'},{method: :post} %>
+
+
   </div>
 </div>
 </div>

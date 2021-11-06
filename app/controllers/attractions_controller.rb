@@ -5,8 +5,10 @@ class AttractionsController < ApplicationController
 
     end
 
-    def move
-        redirect_to("/visited/#{params[:id]}")
+    def visited
+        @visited_attractions = current_user.visited_attractions.includes(:user)
     end
+    
+
 
 end

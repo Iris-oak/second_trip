@@ -1,0 +1,26 @@
+<%= search_form_for @q do |f| %>
+    <%= f.label :user_id, "Keyword" %>
+    <%= f.search_field :user_id_cont %>
+  
+    <%= f.submit "検索" %>
+  <% end %>
+  
+  <form method="post" name="f" action="./sub.cgi" target="hoge_iframe">
+  <input type="hidden" name="arg" value="" />
+  </form>
+  
+  <table class="table table-striped table-bordered">
+  <tr>
+    <th><%= sort_link(@q, :user_id, "User") %></th>
+    <th><%= sort_link(@q, :visited_date, "Date") %></th>
+    <th><%= sort_link(@q, :visited_id, "Visited") %></th>
+    <th colspan="3"></th>
+  </tr>
+  <% @visiteds.each do |visited| %>
+  <tr>
+    <td><%= visited.user_id %></td>
+    <td><%= visited.visited_date %></td>
+    <td><%= visited.attraction_id %></td>
+  </tr>
+  <% end %>
+  </table>

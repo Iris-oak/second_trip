@@ -1,0 +1,3 @@
+<%= link_to visited_path(current_user.visiteds.find_by(attraction_id: attraction.id)), id: "js-visited-button-for-attraction-#{attraction.id}", class:"float-right", method: :delete do %>
+  <%= icon 'fas', 'circle' %>
+<% end %>

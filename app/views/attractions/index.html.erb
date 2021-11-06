@@ -15,24 +15,23 @@
   <th><%= sort_link(@q, :name, "Name") %></th>
   <th><%= sort_link(@q, :city, "City") %></th>
   <th><%= sort_link(@q, :address, "Address") %></th>
-  <th colspan="3"></th>
+  <th>すでに行った</th>
+  <th colspan="2"></th>
 </tr>
 <% @attractions.each do |attraction| %>
 <tr>
-  <tr>
-    <%= form_tag("move")do %>
-        <%= attraction.id %>
-        <%= button_to 'Button'%>
-    <% end %>
-  </tr>
-  <td><%= link_to '登録', post, "detail-" + attraction.id.to_s>
   <td><%= attraction.name %></td>
   <td><%= attraction.city %></td>
   <td><%= attraction.address %></td>
-  <td><%= attraction.id %></td>
+  <td>
+  
+  <% if current_user.visited?(attraction) %>
+    <%= render 'unvisited', { attraction: attraction } %>
+  <% else %>
+    <%= render 'visited', { attraction: attraction } %>
+  <% end %>
+  </td>
 </tr>
 <% end %>
 </table>
-
-<iframe src="./sub.cgi" name="hoge_iframe" id="hoge_iframe">あいふれーむ</iframe>
 
