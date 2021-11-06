@@ -29,3 +29,5 @@ API連携を活用したWebアプリケーション
 ## 画面遷移図のURL
 https://www.figma.com/file/VpgwPJliR2mPYnAQgutobU/Untitled?node-id=4%3A27
 
+## ER図のURL
+https://drive.google.com/file/d/180zts7GRUW2pcQ-CBARJTFUEws38DPTP/view?usp=sharing
