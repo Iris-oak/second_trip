@@ -25,3 +25,9 @@ API連携を活用したWebアプリケーション
 
 ## マーケット
 主に海外の大都市への2回目の旅行を計画中の人
+
+## 画面遷移図のURL
+https://www.figma.com/file/VpgwPJliR2mPYnAQgutobU/Untitled?node-id=4%3A27
+
+## ER図のURL
+https://drive.google.com/file/d/180zts7GRUW2pcQ-CBARJTFUEws38DPTP/view?usp=sharing
